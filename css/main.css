@@ -16,12 +16,13 @@ ul {
 
 .layer {
 	padding:32px 0;
+	font-family: 'Mukta', sans-serif;
 }
 
 .header {
 	display: flex;
 	justify-content: space-between;
-	margin: 0 120px;
+	margin: 0 140px;
 }
 
 .logo {
@@ -37,9 +38,8 @@ ul {
 
 .header-list {
 	list-style-type: none;
-	font-family: mukta, sans-serif;
 	text-transform: capitalize;
-	font-size: 17px;
+	font-size: 16px;
 }
 .header-list li {
 	display: inline-block;
@@ -67,6 +67,7 @@ ul {
 	font-size: 60px;
 	color: #eee;
 	text-align: center;
+	margin-bottom: 40px;
 }
 
 .content-form {
@@ -74,10 +75,15 @@ ul {
 	margin: 0 16px;
 }
 
+.content-form li {
+	display: inline-block;
+}
+
 .input-field {
 	text-align: center;
 	background-color: rgba(255, 255, 255, 0.15);
-	margin-bottom: 25px;
+	margin-bottom: 20px;
+	padding: 3px;
 }
 
 .input-field span {
@@ -90,7 +96,7 @@ ul {
 	background-color: transparent;
 	border: none;
 	outline: none;
-	font-size: 18px;
+	font-size: 17px;
 	font-weight: 300;
 	letter-spacing: 1px;
     color: #ddd;
@@ -110,13 +116,13 @@ ul {
 
 .form-submit-btn {
 	background-color: #fc636b;
-	padding: 11px 0;
+	padding: 11px 3px;
 	color: #fff;
 	font-size: 16px;
 	font-weight: 450;
 	margin-top: 10px;
     width: 100%;
-    margin: 15px 0 35px 0;
+    margin: 15px 0 25px 0;
 }
 
 
@@ -197,7 +203,7 @@ input:checked + .slider:before {
 .new-help a {
 	color: #fff;
 	letter-spacing: 2px;
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: 500;
 }
 
@@ -222,4 +228,103 @@ input:checked + .slider:before {
 
 .bottom p {
 	color: #ccc;
+}
+
+
+
+@media screen and (max-width: 1080px) {
+	.header {
+		margin: 0 75px;
+	}
+
+	.bottom {
+		margin:0 5em;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.header {
+		margin: 0 45px;
+	}
+	.bottom {
+		margin:0 2em;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.bottom {
+		flex-direction: column;
+   	 	text-align: center;
+	}
+	.btm-left {
+		margin-bottom: 8px;
+	}
+
+	.content {
+		margin-bottom: 35px;
+		margin-top: 50px;
+	}
+
+}
+
+@media screen and (max-width: 668px) {
+		.header-list, .form-submit-btn {
+			font-size: 15px;
+		}
+		.content-icon {
+			font-size: 40px;
+		}
+		.new-help a {
+			font-size: 14px;
+		}
+		.header {
+		margin: 0 25px;
+		flex-direction: column;
+    	text-align: center;
+	}
+	.content {
+	    margin: 3em auto;
+	}
+}
+
+
+@media screen and (max-width: 568px) {
+	.content {
+    	margin: 3em auto 2em;
+    	max-width: 450px;
+	}
+	.content-form {
+		padding: 0 2.5em;
+	}
+}
+
+@media screen and (max-width: 415px) {
+	.header {
+		margin: 0 12px;
+		flex-direction: column;
+    	text-align: center;
+	}
+
+	.content-form ul {
+		flex-direction: column;
+    	text-align: center;
+    	margin-bottom: 0 !important;
+	}
+	.content-form ul li {
+		margin-bottom: 10px;
+	}
+
+	.bottom {
+		margin:0 1em;
+		flex-direction: column;
+   	 	text-align: center;
+	}
+}
+
+@media screen and (max-width: 384px) {
+	.content-form {
+    	padding: 0em 1em;
+    	margin-left: 0;
+    	margin-right: 0;
+	}
 }
