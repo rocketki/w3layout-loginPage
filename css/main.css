@@ -30,6 +30,10 @@ ul {
 	color: #fff;
 }
 
+.logo a {
+	color: #fff !important;
+}
+
 .login a {
 	padding: 5px 20px !important;
 	color: #fff !important;
@@ -284,6 +288,14 @@ input:checked + .slider:before {
 	}
 	.content {
 	    margin: 3em auto;
+	}
+
+	.logo {
+		font-size: 25px;
+	}
+
+	.header-list li {
+		margin-right: 0;
 	}
 }
 
