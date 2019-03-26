@@ -9,9 +9,10 @@ ul {
 }
 
 
-.container-fluid {
+body {
 	background: url("../img/bg.jpg") no-repeat center;
     background-size: cover;
+    min-height: 100vh;
 }
 
 .layer {
